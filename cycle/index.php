@@ -10,9 +10,11 @@ echo '<table>';
 for ($rida = 1; $rida <= 5; $rida++) {
     $varv = '#'.rand(0,9).rand(0,9).rand(0,9);
     echo '<tr>';
-        echo '<td style="background: '.$varv.'">';
-        echo '&nbsp';
-        echo '</td>';
+        for ($veerg = 1; $veerg <=5; $veerg++) {
+            echo '<td style="background: '.$varv.'">';
+            echo '&nbsp';
+            echo '</td>';
+        }
     echo '<tr>';
 }
 ?>
