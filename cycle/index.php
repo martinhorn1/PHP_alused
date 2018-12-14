@@ -8,9 +8,9 @@
 echo '<h4>Tsüklid - for</h4>';
 echo '<table>';
 for ($rida = 1; $rida <= 10; $rida++) {
-    echo '<tr>';
+    echo '<tr style="height: 40px;">';
     for ($veerg = 1; $veerg <=10; $veerg++) {
-        echo '<td>';
+        echo '<td style="width: 40px; text-align: center">';
         echo $rida*$veerg.'&nbsp';
         echo '</td>';
     }
