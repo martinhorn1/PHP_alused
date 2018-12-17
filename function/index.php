@@ -11,4 +11,12 @@ function bighello() {
 }
 bighello();
 
+echo 'Funktsioon argumendiga<br>';
+function printBR($txt) {
+    print ($txt.'<br>');
+}
+printBR('This is a line');
+printBR('This is another line');
+printBR('This is yet another line<hr>');
+
 ?>
