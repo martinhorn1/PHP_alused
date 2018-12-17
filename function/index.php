@@ -58,7 +58,17 @@ function andAnotherThing($txt) {
 andAnotherThing('Widgets');
 print ('We build a fine range of widgets');
 andAnotherThing('Doodads');
-print ('Finest in the world');
+print ('Finest in the world<hr>');
+
+echo 'Funktsiooni seisundi meelespidamine<br>';
+function fontWrap($txt, $size) {
+    print '<font size=\'$size\' face=\'Helvetica,Arial,Sans-Serif\'>$txt</font>';
+}
+fontWrap('A heading<br>',5);
+fontWrap('Some body text<br>',3);
+fontWrap('Some more body text<br>',3);
+fontWrap('Yet more body text<br>',3);
+
 
 
 ?>
