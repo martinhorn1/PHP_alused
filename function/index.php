@@ -19,4 +19,11 @@ printBR('This is a line');
 printBR('This is another line');
 printBR('This is yet another line<hr>');
 
+echo 'Funktsioon, mis tagastab väärtuseid<br>';
+function addNums($firstnum, $secondnum) {
+    $result = $firstnum + $secondnum;
+    return $result;
+}
+print addNums(3,5).'<br><hr>';
+
 ?>
