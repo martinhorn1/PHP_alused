@@ -26,4 +26,18 @@ function addNums($firstnum, $secondnum) {
 }
 print addNums(3,5).'<br><hr>';
 
+echo 'Funktsiooni dünaamilised väljakutsed<br>';
+function sayHello() {
+    print 'Hello<br>';
+}
+$function_holder = 'sayHello';
+$function_holder();
+print '<hr>';
+
+echo 'Muutujate nähtavuse piirkond<br>';
+function test() {
+    $testvariable = 'this is a test variable';
+}
+print 'test variable: '.$testvariable.'<hr>';
+
 ?>
