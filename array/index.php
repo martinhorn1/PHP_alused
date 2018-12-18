@@ -20,4 +20,9 @@ $uuedKasutajad = array_merge($kasutajad, $lisaKasutajad);
 for($i = 0; $i < $uuedKasutajad; $i++) {
     echo $uuedKasutajad[$i] . '<br>';
 }
+
+echo '<hr>';
+foreach ($uuedKasutajad as $kasutaja) {
+    echo $kasutajad.'<br>';
+}
 ?>
