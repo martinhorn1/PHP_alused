@@ -36,9 +36,9 @@ print '<hr>';
 
 echo 'Muutujate nähtavuse piirkond<br>';
 function test() {
-    $testvariable = 'this is a test variable';
+//    $testvariable = 'this is a test variable';
 }
-print 'test variable: '.$testvariable.'<hr>';
+//print 'test variable: '.$testvariable.'<hr>';
 
 echo 'Globaalse muutuja kasutamine<br>';
 $life = 42;
@@ -61,21 +61,21 @@ andAnotherThing('Doodads');
 print ('Finest in the world<hr>');
 
 echo 'Funktsiooni seisundi meelespidamine<br>';
-function fontWrap($txt, $size) {
-    print '<font size=\'$size\' face=\'Helvetica,Arial,Sans-Serif\'>$txt</font>';
-}
-fontWrap('A heading<br>',5);
-fontWrap('Some body text<br>',3);
-fontWrap('Some more body text<br>',3);
-fontWrap('Yet more body text<br>',3);
+//function fontWrap($txt, $size) {
+//    print '<font size=\'$size\' face=\'Helvetica,Arial,Sans-Serif\'>$txt</font>';
+//}
+//fontWrap('A heading<br>',5);
+//fontWrap('Some body text<br>',3);
+//fontWrap('Some more body text<br>',3);
+//fontWrap('Yet more body text<br>',3);
 print '<hr>';
 
 echo 'Argumendid viite abil<br>';
-function addFive($num) {
-    print ($num+=5).'<br>';
-}
+//function addFive($num) {
+//    print ($num+=5).'<br>';
+//}
 $orignum = 10;
-addFive($orignum);
+//addFive($orignum);
 print $orignum;
 
 ?>
