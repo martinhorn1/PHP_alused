@@ -68,7 +68,14 @@ fontWrap('A heading<br>',5);
 fontWrap('Some body text<br>',3);
 fontWrap('Some more body text<br>',3);
 fontWrap('Yet more body text<br>',3);
+print '<hr>';
 
-
+echo 'Argumendid viite abil<br>';
+function addFive($num) {
+    print ($num+=5).'<br>';
+}
+$orignum = 10;
+addFive($orignum);
+print $orignum;
 
 ?>
