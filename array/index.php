@@ -26,4 +26,14 @@ for ($i = 0; $i < count($kasutajad); $i++) {
     }
     echo '<hr>';
 }
+
+echo '<table>';
+for ($i = 0; $i < $kasutajad; $i++) {
+    echo '<tr>';
+    foreach ($kasutajad[$i] as $info) {
+        echo '<td>'.$info.'</td>';
+    }
+    echo '</tr>';
+}
+echo '</table>';
 ?>
