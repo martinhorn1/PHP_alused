@@ -74,8 +74,8 @@ echo 'Argumendid viite abil<br>';
 //function addFive($num) {
 //    print ($num+=5).'<br>';
 //}
-$orignum = 10;
+//$orignum = 10;
 //addFive($orignum);
-print $orignum;
+//print $orignum;
 
 ?>

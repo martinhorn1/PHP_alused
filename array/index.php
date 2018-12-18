@@ -1,28 +1,29 @@
 <?php
 
-$kasutajad = array();
+$kasutajad = array(
+    array(
+        'alice',
+        'Alice',
+        'Liddell',
+        'female'
+    ),
+    array(
+        'bob',
+        'Bob',
+        'Builder',
+        'male'
+    )
+);
 
-$kasutajad[] = 'alice';
-$kasutajad[] = 'bob';
-array_push($kasutajad, 'lucy');
-
-$lisaKasutajad = array('mark', 'george');
-
-$kasutajadKokku = count($kasutajad);
-for($i = 0; $i < $kasutajadKokku; $i++){
-    echo $kasutajad[$i].'<br>';
-}
-array_shift($kasutajad);
-for($i = 0; $i < $kasutajadKokku; $i++){
-    echo $kasutajad[$i].'<br>';
-}
-$uuedKasutajad = array_merge($kasutajad, $lisaKasutajad);
-for($i = 0; $i < $uuedKasutajad; $i++) {
-    echo $uuedKasutajad[$i] . '<br>';
-}
-
-echo '<hr>';
-foreach ($uuedKasutajad as $kasutaja) {
-    echo $kasutajad.'<br>';
+for ($i = 0; $i < count($kasutajad); $i++) {
+    if ($kasutajad[$i][3] == 'female') {
+        echo '<div style="color: blue">';
+    } else {
+        echo '<div style="color: red">';
+    }
+    foreach ($kasutajad[$i] as $info) {
+        echo $info.'<br>';
+    }
+    echo '<hr>';
 }
 ?>
