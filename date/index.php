@@ -1,4 +1,5 @@
 <?php
-$sp = mktime(5,24,13,4,2,1988);
-echo date('d.m.Y', $sp);
+echo date('d.m.Y G:i' , time()+60).'<br>';
+echo date('d.m.Y G:i' , time()+60*60).'<br>';
+echo date('d.m.Y G:i' , time()+60*60*24).'<br>';
 ?>
