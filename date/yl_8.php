@@ -1,25 +1,32 @@
 <?php
+//kuude massiiv
+$eesti_kuud = array(1=>'jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember');
+//kuupäevad massiividesse
+$paev = date('d');
+$kuu = $eesti_kuud[date('n')];
+$aasta = date('Y');
+
 $paevanimi = date('l');
 if ($paevanimi == 'Monday') {
-    echo 'Esmaspäev';
+    echo $paev.'.'.$kuu.' '.$aasta.' esmaspäev';
 }
 else if ($paevanimi == 'Tuesday') {
-    echo 'Teisipäev';
+    echo $paev.'.'.$kuu.' '.$aasta.' teisipäev';
 }
 else if ($paevanimi == 'Wednesday') {
-    echo 'Kolmapäev';
+    echo $paev.'.'.$kuu.' '.$aasta.' kolmapäev';
 }
 else if ($paevanimi == 'Thursday') {
-    echo 'Neljapäev';
+    echo $paev.'.'.$kuu.' '.$aasta.' neljapäev';
 }
 else if ($paevanimi == 'Friday') {
-    echo 'Reede';
+    echo $paev.'.'.$kuu.' '.$aasta.' reede';
 }
 else if ($paevanimi == 'Saturday') {
-    echo 'Laupäev';
+    echo $paev.'.'.$kuu.' '.$aasta.' laupäev';
 }
 else if ($paevanimi == 'Sunday') {
-    echo 'Pühapäev';
+    echo $paev.'.'.$kuu.' '.$aasta.' pühapäev';
 }
 ?>
 
