@@ -1,14 +1,15 @@
 <?php
+date_default_timezone_set('Europe/Tallinn');
 
-$synd = date('Y', mktime(0,0,0,2,20,1993));
-$jarg = date('Y');
-
-echo $jarg+1-$synd.'<br>';
-if (($jarg+1-$synd) % 5 == 0) {
-    echo 'Mul on järgmisel aastal juubel';
+$aeg = date('H');
+if ($aeg >= 8 and $aeg < 13) {
+    echo 'Tere hommikust';
 }
-else {
-    echo 'Järgmine juubel tuleb veel hiljem';
+else if ($aeg >= 13 and $aeg < 17) {
+    echo 'Tere päevast';
+}
+else if ($aeg >= 17) {
+    echo 'Tere õhtust';
 }
 
 ?>
