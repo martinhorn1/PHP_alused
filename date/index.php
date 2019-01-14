@@ -1,3 +1,3 @@
 <?php
-echo time();
+echo date('d.m.Y G:i' , time());
 ?>
