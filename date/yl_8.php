@@ -1,10 +1,4 @@
 <?php
-$paevad = array(1=>'esmaspäev', 'teisipäev', 'kolmapäev', 'neljapäev', 'reede', 'laupäev', 'pühapäev');
-//kuupäevad massiividesse
-$paev = date('d');
-$kuu = date('n');
-$aasta = date('Y');
-
 $paevanimi = date('l');
 if ($paevanimi == 'Monday') {
     echo 'Esmaspäev';
