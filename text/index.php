@@ -1,6 +1,6 @@
 <?php
 $tekst = 'All thinking men are atheists';
-echo $tekst[0]; 				//A
+echo $tekst[0];
 echo '<br>';
-echo $tekst[4]; 				//t
+echo $tekst[4];
 ?>
