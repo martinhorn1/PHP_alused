@@ -12,7 +12,7 @@ $ikt = connect_db(DBHOST, DBUSER, DBPASS, DBNAME);
 $sql = 'SELECT * FROM user WHERE username="'.$username.'" AND password="'.md5($password).'"';
 $users = getData($sql, $ikt);
 
-// loome kasutaja sessiioon, kui ta andmebaasis olemas
+// loome kasutaja sessioon, kui ta andmebaasis olemas
 if($users !== false){
     session_start();
     $_SESSION['user'] = $users[0];

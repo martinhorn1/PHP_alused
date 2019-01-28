@@ -1,5 +1,5 @@
 <?php
-session_strt();
+session_start();
 require_once 'fnk.php';
 
 if(isset($_SESSION['user'])){
